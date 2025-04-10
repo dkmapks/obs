@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Social Page</h1>
+        <form id="registerForm">
+            <h2>Create Account</h2>
+            <input type="text" id="username" placeholder="Enter username (any name)" required>
+            <button type="submit">Register</button>
+        </form>
+        
+        <div id="searchSection">
+            <h2>Search Users</h2>
+            <input type="text" id="searchInput" placeholder="Search by username">
+            <ul id="searchResults"></ul>
+        </div>
+
+        <div id="usersDisplay" style="display: none;">
+            <h2>Users</h2>
+            <ul id="users"></ul>
+        </div>
+
+        <div id="modMenu" style="display: none;">
+            <h2>Mod Menu</h2>
+            <button id="addCustomLikes">Add Custom Likes</button>
+            <button id="addCustomFollowers">Add Custom Followers</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
